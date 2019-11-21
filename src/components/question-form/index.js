@@ -20,7 +20,11 @@ const QuestionForm = ({ closeModal, questionCreate }) => {
     className: 'question-input',
   };
   const handleSubmit = async (e) => {
-    // TODO -- 2
+    e.preventDefault();
+    await questionCreate({ variables: { data: questionForm } });
+    closeModal();
+    toast('Your question has been created successfully');
+};
   };
   const handleInputChange = (event) => {
     // TODO -- 3
