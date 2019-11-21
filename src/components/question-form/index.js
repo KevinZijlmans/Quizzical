@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import TagsInput from 'react-tagsinput';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
-import { FileInput } from '@8base/file-input';
+import { FileInput } from '@8base-react/file-input';
 import { toast } from 'react-toastify';
 
 import 'react-tagsinput/react-tagsinput.css';
-import './form.css';
+import './question-form.css';
 
 const QUESTION_CREATE_MUTATION = gql`
   mutation QuestionCreate($data: QuestionCreateInput!) {

@@ -27,7 +27,8 @@ const closeModal = () => {
       </header>
       <Questions />
       <button className="add-question" onClick={_ => setModalOpen(true)}>
-        <img src={Add} alt="Click to create a new question"/>
+        <p>Click here to create a new question!</p>
+        <img class="addNew" src={Add} alt="Click to create a new question"/>
       </button>
       <QuestionModal // --- 5
           isOpen={modalOpen}
