@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./question.css";
+
 const Question = ({ question, onNextClicked }) => {
   const [answered, setAnswered] = useState(false);
   const [selectedOption, setSelectedOption] = useState({});

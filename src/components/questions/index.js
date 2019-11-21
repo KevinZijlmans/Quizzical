@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
+import Question from "../question/index"
 
 const Questions = ({ questions }) => { 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +43,11 @@ const Questions = ({ questions }) => {
             </h3>
           </div>
         ) : (
-         // TODO -- create component to render question here
+            <Question
+            onNextClicked={onNextClicked}
+            question={currentQuestion}
+            key={currentQuestion.id}
+          />
         )}
       </div>
     ) : (
