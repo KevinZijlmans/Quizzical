@@ -43,7 +43,10 @@ const QuestionForm = ({ closeModal, questionCreate }) => {
     });
   };
   const handleImageChange = (value) => {
-    // TODO -- 5
+    setQuestion({
+      ...questionForm,
+      image: { create: value },
+    });
   };
   return (
     <form action="" id="question-form" onSubmit={handleSubmit}>
