@@ -37,7 +37,10 @@ const QuestionForm = ({ closeModal, questionCreate }) => {
     });
   };
   const handleTagsChange = (options) => {
-    // TODO -- 4
+    setQuestion({
+      ...questionForm,
+      options,
+    });
   };
   const handleImageChange = (value) => {
     // TODO -- 5
