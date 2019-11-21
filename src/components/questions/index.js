@@ -30,7 +30,7 @@ const Questions = ({ questions }) => {
     
 
     return questions.length ? (
-         <div>
+      <div>
         {showFinished ? (
           <div className="results">
             <img
