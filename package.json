@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@8base-react/file-input": "^1.1.4",
     "apollo-boost": "^0.4.4",
+    "css-loader": "^3.2.0",
     "graphql": "^14.5.8",
     "graphql-tag": "^2.10.1",
+    "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
     "react-apollo": "^3.1.3",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-modal": "^3.11.1",
+    "react-scripts": "3.2.0",
+    "react-tagsinput": "^3.19.0",
+    "react-toastify": "^5.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

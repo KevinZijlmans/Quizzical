@@ -61,7 +61,10 @@ const GET_QUESTIONS_QUERY = gql`query {
         question
         options
         answer
-        image
+        image {
+          id
+          __typename
+        }
       }
     }
   }`;

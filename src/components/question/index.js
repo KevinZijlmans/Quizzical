@@ -19,7 +19,7 @@ const Question = ({ question, onNextClicked }) => {
     setSelectedOption({});
     onNextClicked(selectedOption);
   };
-
+console.log(question)
   return (
   <div className="question">
     <div className="question-image-holder">
