@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import QuestionForm from "../question-form";
-import "./modal.css";
+import "./question-modal.css";
 import Close from "./cancel.svg";
 const customStyles = {
   content: {
