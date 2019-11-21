@@ -28,39 +28,9 @@ const Questions = ({ questions }) => {
         setScore(0);
       };
     
-      return questions.length ? (
-        <div>
-          {showFinished ? (
-            <div className="results">
-              <img
-                src="https://memegenerator.net/img/instances/70669406/your-watch-has-ended.jpg"
-                alt="Your watch has ended"
-              />
-              <h3>
-                Your results are out. You scored {score} out of {questions.length}
-              </h3>
-            </div>
-          ) : (
-            // TODO -- create component to render question here
-          )}
-          {showFinished ? (
-            <button className="try-again" onClick={resetQuiz}>
-              Try again
-            </button>
-            ) : (
-            <div className="questions-progress">
-              {currentIndex + 1}/{questions.length}
-            </div>
-          )}
-        </div>
-      ) : (
-        <p>Loading</p>
-      );
-    };
-    
 
     return questions.length ? (
-      <div>
+         <div>
         {showFinished ? (
           <div className="results">
             <img
