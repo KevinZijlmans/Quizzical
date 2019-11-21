@@ -27,7 +27,14 @@ const QuestionForm = ({ closeModal, questionCreate }) => {
 };
   };
   const handleInputChange = (event) => {
-    // TODO -- 3
+    event.preventDefault();
+    const {
+      target: { name, value },
+    } = event;
+    setQuestion({
+      ...questionForm,
+      [name]: value,
+    });
   };
   const handleTagsChange = (options) => {
     // TODO -- 4
